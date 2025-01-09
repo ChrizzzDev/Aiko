@@ -1,0 +1,29 @@
+{
+  "name": "aiko",
+  "module": "index.ts",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/bun": "^1.1.16",
+    "@types/node": "^22.10.5",
+    "prettier": "^3.4.2",
+    "prisma": "^6.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.1.0",
+    "es-next-tools": "^1.2.0",
+    "seyfert": "^2.2.1-dev-12681581510.0",
+    "yunaforseyfert": "^1.1.0"
+  },
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun src/index.ts --dev --debug",
+    "update": "bun src/lib/functions/update.ts"
+  },
+  "trustedDependencies": [
+    "seyfert"
+  ]
+}
